@@ -1,0 +1,293 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SkitInternalBoss",
+				"abbreviation": "GOAWAY",
+				"full": "A Terrible Overpowered Boss",
+				"url": "",
+				"authors": [
+					"Skitter"
+				],
+				"convertedBy": [
+					"Skitter"
+				]
+			}
+		],
+		"dateAdded": 1597466811,
+		"dateLastModified": 1597466811
+	},
+	"monster": [
+		{
+			"name": "Exolvuntr",
+			"isNamedCreature": true,
+			"source": "SkitInternalBoss",
+			"size": "L",
+			"type": "aberration",
+			"alignment": [
+				"U"
+			],
+			"ac": [
+				35
+			],
+			"hp": {
+				"formula": "70d100 + 2030",
+				"average": 9030
+			},
+			"speed": {
+				"walk": 300,
+				"fly": 600,
+				"canHover": false
+			},
+			"str": 65,
+			"dex": 40,
+			"con": 69,
+			"int": 70,
+			"wis": 70,
+			"cha": 70,
+			"save": {
+				"str": "+27",
+				"dex": "+15",
+				"con": "+29",
+				"int": "+30",
+				"wis": "+30",
+				"cha": "+30"
+			},
+			"skill": {
+				"arcana": "+30",
+				"acrobatics": "+15",
+				"animal handling": "+30",
+				"deception": "+30",
+				"athletics": "+27",
+				"history": "+30",
+				"insight": "+30",
+				"intimidation": "+30",
+				"investigation": "+30",
+				"medicine": "+30",
+				"nature": "+30",
+				"perception": "+30",
+				"performance": "+30",
+				"persuasion": "+30",
+				"religion": "+30",
+				"sleight of hand": "+15",
+				"stealth": "+15",
+				"survival": "+30"
+			},
+			"senses": [
+				"Omnipotent"
+			],
+			"passive": 40,
+			"resist": [
+				"acid",
+				"force",
+				"lightning",
+				"poison",
+				"psychic",
+				"thunder",
+				{
+					"special": "bludgeoning, piercing, and slashing from nonmagical weapons"
+				},
+				{
+					"resist": [
+						{
+							"special": "all dual-type damage"
+						}
+					]
+				}
+			],
+			"immune": [
+				"cold",
+				"necrotic",
+				{
+					"special": "void"
+				}
+			],
+			"vulnerable": [
+				"radiant",
+				{
+					"special": "true"
+				}
+			],
+			"conditionImmune": [
+				"blinded",
+				"charmed",
+				"deafened",
+				"exhaustion",
+				"frightened",
+				"grappled",
+				"incapacitated",
+				"paralyzed",
+				"petrified",
+				"poisoned",
+				"prone",
+				"restrained",
+				"stunned",
+				"unconscious"
+			],
+			"languages": [
+				"All",
+				"telepathy"
+			],
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"This creature may cast any spell at it's minimum level at will, or may cast the following at 20th level."
+					],
+					"will": [
+						"{@spell crown of stars|XGE}",
+						"{@spell dark star|EGW}",
+						"{@spell delayed blast fireball}",
+						"{@spell disintegrate}",
+						"{@spell feeblemind}",
+						"{@spell finger of death}",
+						"{@spell fireball}",
+						"{@spell invulnerability|XGE}",
+						"{@spell maddening darkness|XGE}",
+						"{@spell meteor swarm}",
+						"{@spell psychic scream|XGE}",
+						"{@spell ravenous void|EGW}",
+						"{@spell reality break|EGW}",
+						"{@spell shadow blade|XGE}",
+						"{@spell sunburst}",
+						"{@spell time ravage|EGW}",
+						"{@spell time stop}",
+						"{@spell wish}"
+					],
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Alone",
+					"entries": [
+						"While in combat with Exolvuntr, creatures must be within 15 feet of one another to support an ally in any way, and within 60 feet to communicate. "
+					]
+				},
+				{
+					"name": "Immutable",
+					"entries": [
+						"Any effect that would force a save to succeed or fail instead adds or subtracts 5 from the roll."
+					]
+				},
+				{
+					"name": "Supernatural Resilience",
+					"entries": [
+						"Exolvuntr cannot lose more than 500 HP per turn."
+					]
+				},
+				{
+					"name": "Mythic Resistance (3/Day)",
+					"entries": [
+						"Exolvuntr may choose to ignore any one effect it chooses."
+					]
+				},
+				{
+					"name": "Cold Void",
+					"entries": [
+						"If this unit takes a form of damage it is vulnerable to, it loses it's resistances until the start of it's next turn."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Exolvuntr may make two reave attacks or three rend attacks, and a destabilize attack."
+					]
+				},
+				{
+					"name": "Reave",
+					"entries": [
+						"{@atk mw} {@hit 27} to hit, reach 15 ft cone., one target. {@h}265 ({@damage 32d12 + 57}) slashing damage, plus 201 ({@damage 8d20 + 117}) void damage."
+					]
+				},
+				{
+					"name": "Rend",
+					"entries": [
+						"{@atk rw} {@hit 15} to hit, range 300/infinite ft., one target. {@h}170 ({@damage 10d12 + 105}) void damage."
+					]
+				},
+				{
+					"name": "Destabilize",
+					"entries": [
+						"{@atk mw} {@hit 27} to hit, reach 30 ft., one target. {@h}183 ({@damage 12d20 + 57}) piercing damage. The target must make a Constitution save vs this unit's spellcasting modifier or take 285 ({@damage 16d20 + 117}) void damage."
+					]
+				},
+				{
+					"name": "Unmake {@recharge 5}",
+					"entries": [
+						"Pitch black tendrils attempt to ensnare the target. The target must make a DC30 Dexterity save to avoid being trapped. If the save fails, the victim is {@condition restrained} and {@condition paralyzed}, and Exolvuntr ends it's turn. The vines are AC25 and have 100 HP. The following turn, black mist will begin to emit from the victim, and Exolvuntr may attempt to obliterate them, and the victim must make a DC25 Constitution save or be erased entirely. Only a wish spell is able to reverse this effect, and the victim will rematerialize next to the caster with 0 hit points, halved AC, and one failed death save. The save is automatically failed if the victim has 1 or less HP. Anyone who knew the victim must make a DC20 Wisdom save or forget that they even existed, and be left with a fading memory and a profound sense of emptiness. If the victim succeeds the save, they are reduced to 0 HP and their AC is cut in half until cured with greater restoration or a similar spell. "
+					]
+				},
+				{
+					"name": "Shift",
+					"entries": [
+						"If not observed, this unit may teleport to a space obscured by darkness, or an area that is not being observed by a creature with 4 or more Intelligence."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "Reject",
+					"entries": [
+						"Exolvuntr may choose one creature that has attempted to damage or otherwise adversely affect it, and ignore all damage or negative effects from that creature until Exolvuntr's next turn. It may not choose the same creature twice in a row. The target will briefly flash both when the effect starts and ends. A DC20 Intelligence check is needed to learn of the meaning of the flash."
+					]
+				}
+			],
+			"legendaryActions": 9,
+			"legendary": [
+				{
+					"name": "Attack",
+					"entries": [
+						"Exolvuntr can take the attack action."
+					]
+				},
+				{
+					"name": "Reform",
+					"entries": [
+						"This unit regains 100 HP."
+					]
+				},
+				{
+					"name": "Shift",
+					"entries": [
+						"If not observed, this unit may teleport to a space obscured by darkness, or an area that is not being observed by a creature with 4 or more Intelligence."
+					]
+				}
+			],
+			"mythicHeader": [
+				"A mythic action is able to be taken for each 3010 HP lost, at the end of the current turn."
+			],
+			"mythic": [
+				{
+					"name": "Ultimatum",
+					"entries": [
+						"All creatures in combat with Exolvuntr are instantly ensnared by pitch black tendrils (see Unmake, but these tendrils are invulnerable). (Still have them roll the save, but they fail without a natural 20). A single word will echo through the minds of the victims. \"Choose.\" One of the victims must select themselves as the target for Unmake."
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Alpha and omega. Creator and destroyer."
+				]
+			},
+			"tokenUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffc06.deviantart.net%2Ffs70%2Ff%2F2013%2F225%2Fd%2Fb%2Friddick_glowing_eyes_silhouette_by_hfa18-d6i2500.png&f=1&nofb=1",
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"TP"
+			],
+			"damageTags": [
+				"P",
+				"S"
+			],
+			"miscTags": [
+				"MW",
+				"RCH",
+				"RW"
+			]
+		}
+	]
+}
