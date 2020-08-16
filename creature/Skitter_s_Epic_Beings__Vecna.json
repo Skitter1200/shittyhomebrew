@@ -1,0 +1,305 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "SkittersEpicBeingsVecna",
+				"abbreviation": "SEB:V",
+				"full": "Skitter's Epic Beings: Vecna",
+				"url": "https://drive.google.com/file/d/11Q_RBb9pbre3be9wo3b3_h8xRIobqb28/view",
+				"authors": [
+					"Skitter",
+					"Various"
+				],
+				"convertedBy": [
+					"Skitter"
+				]
+			}
+		],
+		"dateAdded": 1597538784,
+		"dateLastModified": 1597538784
+	},
+	"monster": [
+		{
+			"name": "Vecna, the Maimed God",
+			"shortName": "Vecna",
+			"isNamedCreature": true,
+			"source": "SkittersEpicBeingsVecna",
+			"size": "M",
+			"type": "undead",
+			"alignment": [
+				"N",
+				"E"
+			],
+			"ac": [
+				30
+			],
+			"hp": {
+				"formula": "50d20 + 600",
+				"average": 1125
+			},
+			"speed": {
+				"walk": 60,
+				"fly": {
+					"number": 60,
+					"condition": "(hover)"
+				},
+				"canHover": true
+			},
+			"str": 26,
+			"dex": 30,
+			"con": 35,
+			"int": 38,
+			"wis": 30,
+			"cha": 31,
+			"save": {
+				"str": "+17",
+				"dex": "+19",
+				"con": "+21",
+				"int": "+23",
+				"wis": "+19",
+				"cha": "+19"
+			},
+			"skill": {
+				"acrobatics": "+19",
+				"arcana": "+32",
+				"history": "+32",
+				"insight": "+28",
+				"intimidation": "+28",
+				"medicine": "+19",
+				"nature": "+23",
+				"perception": "+28",
+				"persuasion": "+28",
+				"religion": "+23",
+				"survival": "+19",
+				"deception": "+28"
+			},
+			"passive": 38,
+			"resist": [
+				{
+					"special": "bludgeoning, piercing, and slashing from +4 or lesser magic weapons"
+				}
+			],
+			"immune": [
+				{
+					"special": "bludgeoning, piercing, and slashing from non magic weapons"
+				}
+			],
+			"vulnerable": [
+				"radiant"
+			],
+			"cr": "30",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"headerEntries": [
+						"Vecna may cast any cantrip, divination, illusion, or necromancy spell at 9th level, as well as being able to innately cast the following spells at 12th level or lower:"
+					],
+					"will": [
+						"{@spell bane}",
+						"{@spell comprehend languages}",
+						"{@spell cone of cold}",
+						"{@spell contact other plane}",
+						"{@spell counterspell}",
+						"{@spell delayed blast fireball}",
+						"{@spell detect magic}",
+						"{@spell detect thoughts}",
+						"{@spell dispel magic}",
+						"{@spell enlarge/reduce}",
+						"{@spell fireball}",
+						"{@spell hellish rebuke}",
+						"{@spell hex}",
+						"{@spell lightning bolt}",
+						"{@spell magic missile}",
+						"{@spell polymorph}",
+						"{@spell remove curse}",
+						"{@spell scrying}",
+						"{@spell sending}",
+						"{@spell shield}",
+						"{@spell shield of faith}",
+						"{@spell sleep}",
+						"{@spell spare the dying}",
+						"{@spell telekinesis}",
+						"{@spell teleport}",
+						"{@spell thunderwave}"
+					],
+					"daily": {
+						"3e": [
+							"{@spell arcane gate}",
+							"{@spell banishment}",
+							"{@spell cloudkill}",
+							"{@spell creation}",
+							"{@spell dimension door}",
+							"{@spell disintegrate}",
+							"{@spell divine word}",
+							"{@spell dominate person}",
+							"{@spell etherealness}",
+							"{@spell globe of invulnerability}",
+							"{@spell greater restoration}",
+							"{@spell holy aura}",
+							"{@spell magic jar}",
+							"{@spell Mordenkainen's private sanctum}",
+							"{@spell remove curse}",
+							"{@spell resurrection}",
+							"{@spell slow}",
+							"{@spell symbol}",
+							"{@spell telepathy}",
+							"{@spell wall of force}"
+						],
+						"1e": [
+							"{@spell astral projection}",
+							"{@spell control weather}",
+							"{@spell dominate person}",
+							"{@spell gate}",
+							"{@spell imprisonment}",
+							"{@spell meteor swarm}",
+							"{@spell plane shift}",
+							"{@spell power word kill}",
+							"{@spell power word stun}",
+							"{@spell true resurrection}",
+							"{@spell wish}"
+						]
+					},
+					"type": "spellcasting"
+				}
+			],
+			"trait": [
+				{
+					"name": "Supernatural Resilience",
+					"entries": [
+						"Vecna cannot lose more than 250 HP in a single turn."
+					]
+				},
+				{
+					"name": "Regeneration",
+					"entries": [
+						"Vecna regains 40 HP at the start of his turn."
+					]
+				},
+				{
+					"name": "Divine Might",
+					"entries": [
+						"An intermediate god's attacks and effects ignore the resistances and immunities of creatures CR 20 and below. An intermediate god's attacks and effects targeting creatures of CR 21-30 ignore resistances and treat immunities as resistance (condition immunities provide advantage in lieu of immunity)."
+					]
+				},
+				{
+					"name": "Limited Magic Immunity",
+					"entries": [
+						"Unless Vecna wishes to be affected, he is immune to spells of 6th level or lower, and has advantage and resistance versus all other spells and magical effects. In addition, upon failing a saving throw against an offensive spell, he takes half damage."
+					]
+				},
+				{
+					"name": "Magic Weapons",
+					"entries": [
+						"Vecna's attacks are treated as +4 magic weapons."
+					]
+				},
+				{
+					"name": "Undead Caster",
+					"entries": [
+						"Vecna's offensive spells deal an extra 37 ({@damage 6d8 + 10}) cold damage on hit or a failed save."
+					]
+				},
+				{
+					"name": "The Eye and Hand",
+					"entries": [
+						"Vecna normally appears without a hand or eye, both artifacts he controls. Instead he has a spectral hand in place of his own, and a glowing red orb in his right socket. If the eye and hand have been returned to Vecna he can reattach them to his body. Once the eye and hand have been reattached they act as a single +5 artifact with 10 charges. He can spend 1 or more charges to cast one of the following spells with a {@dc 36}: circle of death (1 charge), meteor swarm (3 Charges), prismatic wall (2 charges), true polymorph (2 Charges)"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Vecna makes two attacks, any combination of casting a spell, banishing touch, finger of death, or hand of death."
+					]
+				},
+				{
+					"name": "Banishing Touch",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}56 ({@damage 8d8 + 20}) damage, plus 45 ({@damage 6d8 + 18}) cold damage. The target must make a DC36 Charisma save or suffer the effects of the banishment spell. On a success, you instead teleport up to 60 feet away in a direction of your choosing."
+					]
+				},
+				{
+					"name": "Hand of Death",
+					"entries": [
+						"{@atk mw} {@hit 17} to hit, reach 5 ft., one target. {@h}56 ({@damage 8d8 + 20}) damage, plus 45 ({@damage 6d8 + 18}) cold damage. A creature hit by this attack must make a DC36 Constitution save or be {@condition blinded} and {@condition deafened} for one minute. A creature may repeat this saving throw on the start of it's turn, ending this effect on a success."
+					]
+				},
+				{
+					"name": "Finger of Death",
+					"entries": [
+						"Vecna casts a spell and sends negative energy coursing through one creature he can see within 120 feet. The target must make a DC36 Constitution saving throw, taking {@h}65 ({@damage 10d8 + 20}) necrotic damage, plus 45 ({@damage 6d8 + 18}) cold damage on a failed save, and half as much on a success."
+					]
+				},
+				{
+					"name": "Corpus Liquiface {@recharge}",
+					"entries": [
+						"{@atk mw} {@hit 22} to hit, reach 5 ft., one target. The target must make a DC28 Constitution save, on a failure they die."
+					]
+				},
+				{
+					"name": "Meta-Magic",
+					"entries": [
+						"Vecna can use a bonus action to double the range of his next spell or ability."
+					]
+				},
+				{
+					"name": "Quick-Cast {@recharge 4}",
+					"entries": [
+						"Vecna can use a bonus action to cast a spell or make an attack."
+					]
+				}
+			],
+			"legendaryHeader": [
+				"Vecna can take 4 legendary actions, choosing from the options below. Only one legendary action can be used at a time and only at the end of another creature's turn. If Vecna has unspent legendary actions at the end of the round, he may immediately use them all one after another. Vecna regains spent legendary actions at the start of its turn."
+			],
+			"legendaryActions": 4,
+			"legendary": [
+				{
+					"name": "Quick-Cast",
+					"entries": [
+						"Vecna casts a spell or makes an attack."
+					]
+				},
+				{
+					"name": "Move",
+					"entries": [
+						"Vecna moves up to half his movement speed."
+					]
+				},
+				{
+					"name": "Heal",
+					"entries": [
+						"Vecna regains 20 HP."
+					]
+				},
+				{
+					"name": "Spell Recall (Costs 2 actions, recharge 5-6)",
+					"entries": [
+						"Vecna regains an expended spell or daily ability."
+					]
+				},
+				{
+					"name": "Soul Rend (Costs 4 actions, 2/day)",
+					"entries": [
+						"Vecna chooses one creature he knows or can see, and is on the same plane as him, and attempts to tear its soul from its body. The creature must make a {@dc 32} Wisdom save. On a failed save the creature drops to 0 hit points. If the creature is still at 0 hit points at the start of its next turn it must make an additional saving throw. On a failure it dies instantly and its soul is ripped from its body and devoured by Vecna. Vecna heals for 10 HP per CR plus level of the creature whose soul was devoured. On a successful save the target is immune to the effects of this attack permanently. If the target's body is restored to life by any means, the target remains in a comatose state that lasts until the soul is restored. The soul cannot be restored through any means other than a wish spell or divine intervention, and Vecna himself must be dead for this to work."
+					]
+				}
+			],
+			"traitTags": [
+				"Magic Weapons",
+				"Regeneration"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"damageTags": [
+				"C",
+				"N"
+			],
+			"miscTags": [
+				"MW"
+			]
+		}
+	]
+}
